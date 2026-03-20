@@ -22,9 +22,14 @@
     "tailwindcss": "^4.2.1",
     "tapable": "^2.3.0"
   },
+  
+  "engines": {
+  "node": ">=18"
+},
   "scripts": {
     "watcher": "npx @tailwindcss/cli -i ./input.css -o ./css/styles.css --watch"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC"
