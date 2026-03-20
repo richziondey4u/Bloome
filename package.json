@@ -5,32 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
-    "detect-libc": "^2.1.2",
-    "enhanced-resolve": "^5.20.0",
-    "graceful-fs": "^4.2.11",
-    "is-extglob": "^2.1.1",
-    "is-glob": "^4.0.3",
-    "jiti": "^2.6.1",
-    "lightningcss-win32-x64-msvc": "^1.31.1",
-    "magic-string": "^0.30.21",
-    "mri": "^1.2.0",
-    "node-addon-api": "^7.1.1",
-    "picocolors": "^1.1.1",
-    "picomatch": "^4.0.3",
-    "source-map-js": "^1.2.1",
-    "tailwindcss": "^4.2.1",
-    "tapable": "^2.3.0"
+    "tailwindcss": "^4.2.1"
+  },
+  "optionalDependencies": {
+    "lightningcss": "^1.32.0"
   },
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "watcher": "npx @tailwindcss/cli -i ./input.css -o ./css/styles.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "optionalDependencies": {
-    "lightningcss": "^1.32.0"
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./css/styles.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./css/styles.css"
   }
 }
